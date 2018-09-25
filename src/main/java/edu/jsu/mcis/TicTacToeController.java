@@ -1,4 +1,5 @@
 package edu.jsu.mcis;
+import edu.jsu.mcis.*;
 
 import java.util.Scanner;
 
@@ -35,7 +36,20 @@ public class TicTacToeController {
            error message using view's showInputError() if input is invalid. */
         
         /* INSERT YOUR CODE HERE */
-        
-    }
-
+		/*System.out.println("Which row and column would you like? Make your mark in the following format: 1 1");
+		public String getRowColumn(int row, int col){
+			return Mark[][] grid;
+		}
+		public void markRowColumn(int row, int col){}*/
+		boolean validInput = false;
+		while(!validInput) {
+			if(!model.makeMark(keyboard.nextInt(), keyboard.nextInt())) {
+				view.showInputError();
+				view.showNextMovePrompt();
+			} else {
+				validInput = true;
+			}
+		}
+			}
+			
 }
