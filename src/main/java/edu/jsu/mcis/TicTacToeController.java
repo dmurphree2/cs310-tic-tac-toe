@@ -1,4 +1,4 @@
-package edu.jsu.mcis;
+/*package edu.jsu.mcis;
 import edu.jsu.mcis.*;
 
 import java.util.Scanner;
@@ -11,16 +11,16 @@ public class TicTacToeController {
     
     /* CONSTRUCTOR */
 
-    public TicTacToeController(TicTacToeModel model, TicTacToeView view) {
+  /*  public TicTacToeController(TicTacToeModel model, TicTacToeView view) {
         
         /* Initialize model and view */
-
+/*
         this.model = model;
         this.view = view;
         
         /* Initialize scanner (for console keyboard) */
         
-        keyboard = new Scanner(System.in);
+  /*      keyboard = new Scanner(System.in);
 
     }
 
@@ -28,7 +28,7 @@ public class TicTacToeController {
         
         /* Prompt player for next move using view's showNextMovePrompt() */
         
-        view.showNextMovePrompt();
+  /*      view.showNextMovePrompt();
         
         /* Receive and validate input, which should be read at the keyboard as
            two integers, the row and the column (for example, "1 1" for the
@@ -41,8 +41,8 @@ public class TicTacToeController {
 			return Mark[][] grid;
 		}
 		public void markRowColumn(int row, int col){}*/
-		boolean validInput = false;
-		while(!validInput) {
+	/*	boolean validInput = false;*/
+		/*while(!validInput) {
 			if(!model.makeMark(keyboard.nextInt(), keyboard.nextInt())) {
 				view.showInputError();
 				view.showNextMovePrompt();
@@ -52,4 +52,4 @@ public class TicTacToeController {
 		}
 			}
 			
-}
+}*/
