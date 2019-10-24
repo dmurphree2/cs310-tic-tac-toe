@@ -40,3 +40,21 @@ public void controlModel() houses the code prompting the player to make their mo
 and checks to see if the move the player has chosen is allowed within the rules of the
 game, notifying the player if the move isn't allowed and giving control back to the player
 until they make a valid move.
+
+
+TicTacToeModel.java establishes the structure and requirements for a win, loss, or tie
+in a game of Tic Tac Toe. This includes the appearance of the empty spaces, X's and O's as the player and opponent marks, checking if the game has ended with a win, loss, or tie, and notifies the player if they have won, lost, or tied.
+
+private enum Mark establishes X, O, and - as the player marks and empty space for the board.
+
+public enum Result shows the player if X or O has won, if the match ended with a Tie, or if the match is ongoing it will simply say "None."
+
+public TicTacToeModel(int width) sets up the width of the board and starts as X's turn.
+
+for(int i=0; i < width; i++) block sets all the squares to empty. public boolean makeMark(int row, int col) block allows the empty squares to be filled with an X or O if it's allowed(not currently filled or out of bounds.)
+
+private boolean isValidSquare(int row, int col) block establishes what qualifies as a valid square.
+
+public boolean isSquareMarked(int row, int col) block checks if there is still squares which are marked.
+
+public Mark getMark(int row, int col) block
