@@ -57,4 +57,27 @@ private boolean isValidSquare(int row, int col) block establishes what qualifies
 
 public boolean isSquareMarked(int row, int col) block checks if there is still squares which are marked.
 
-public Mark getMark(int row, int col) block
+public Mark getMark(int row, int col) block ensures the marks and empty spaces remain their intended values between turns.
+
+public Result getResult() block returns the results of the match, whether it be a victory for X or O, a tie, or if the game is still ongoing.
+
+private boolean isMarkWin(Mark mark) block checks all the squares to see if there's a complete line of X's or O's, declaring the mark in a complete line the winner.
+
+private boolean isTie() block inspects the board when no other actions can be made, and if there's no winner it will declare the game a tie.
+
+public boolean isGameover() is declared when the game ends in a win, loss, or tie.
+
+public boolean isXTurn() is the getter method for xTurn
+
+public int getWidth() is the getter method of width
+
+
+TicTacToeView.java displays the board and all text needed for this game. This includes notifying the player of who's turn it is, whether a move is not allowed, telling the player how to place a mark on the board, and who the winner is.
+
+public void viewModel() block prints the board onto the consle, to the specifications of the player's initial parameters with all squares empty.
+
+public void showNextMovePrompt() block asks the player for their next move.
+
+public void showInputError() block notifies the player if an invalid move has been made.
+
+public void showResult(String r) block prints the name of the winner, along with an exclamation point at the end for emphasis.
